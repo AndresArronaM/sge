@@ -1,0 +1,59 @@
+.#{$prefix-pv}{
+  &-inputtext{
+    @apply
+      tw-w-full;
+  }
+
+  &-buttonset{
+    @apply
+      tw-flex
+      tw-flex-row;
+  }
+
+  &-card &-card-subtitle{
+    color:inherit;
+  }
+
+  &-button{
+    @apply
+        tw-gap-4;
+
+    & svg {
+      @apply
+        tw-w-[inherit]
+    }
+    &:enabled{
+      &:active.sge-primary{
+        @include colors_btn('teal', true);
+      }
+
+      &:hover.sge-primary {
+        @include colors_btn('teal', true);
+      }
+
+      &:active.sge-primary-alt{
+        @include colors_btn('teal', false);
+      }
+
+      &:hover.sge-primary-alt {
+        @include colors_btn('teal', false);
+      }
+
+      &:active.sge-second{
+        @include colors_btn('sky', true);
+      }
+
+      &:hover.sge-second {
+        @include colors_btn('sky', true);
+      }
+
+      &:active.sge-second-alt{
+        @include colors_btn('sky', false);
+      }
+
+      &:hover.sge-second-alt {
+        @include colors_btn('sky', false);
+      }
+    }
+  }
+}

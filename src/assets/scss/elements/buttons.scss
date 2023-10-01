@@ -1,0 +1,34 @@
+.#{$prefix}{
+  &-btn{
+    @apply
+      tw-text-sm;
+  }
+  &-primary{
+    @include colors_btn('teal', false);
+
+    &:hover {
+      @include colors_btn('teal', true);
+    }
+
+    &-alt {
+      @include colors_btn('teal', true);
+      &:hover {
+        @include colors_btn('teal', false);
+      }
+    }
+  }
+
+  &-second{
+    @include colors_btn('sky', false);
+    &:hover {
+      @include colors_btn('sky', true);
+    }
+
+    &-alt {
+      @include colors_btn('sky', true);
+      &:hover {
+        @include colors_btn('sky', false);
+      }
+    }
+  }
+}

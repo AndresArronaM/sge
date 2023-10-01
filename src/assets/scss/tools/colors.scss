@@ -1,0 +1,25 @@
+@mixin colors_btn($color, $alt){
+  @apply
+    tw-border-#{$color}-900;
+  @if ($alt == true){
+    @apply
+      tw-text-#{$color}-900
+      tw-bg-#{$color}-50;
+  } @else {
+    @apply
+      tw-text-#{$color}-50
+      tw-bg-#{$color}-900;
+  }
+}
+
+@mixin colors_checkbox($color, $alt){
+  @if ($alt == true) {
+    @apply
+      tw-bg-#{$color}-900
+      tw-border-#{$color}-900;
+  } @else {
+    @apply
+      tw-bg-#{$color}-50
+      tw-border-#{$color}-50;
+  }
+}

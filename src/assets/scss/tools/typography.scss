@@ -1,0 +1,26 @@
+@mixin title ($size, $weight, $color, $align, $transform) {
+  @if ($size != null){
+    @apply
+      tw-text-#{$size};
+  }
+
+  @if ($weight != null){
+    @apply
+      tw-font-#{$weight};
+  }
+
+  @if ($color != null){
+    @apply
+      tw-text-#{$color};
+  }
+
+  @if ($align != null){
+    @apply
+      tw-text-#{$align};
+  }
+
+  @if ($transform != null){
+    @apply
+      tw-#{$transform};
+  }
+}

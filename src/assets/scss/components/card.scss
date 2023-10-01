@@ -1,0 +1,26 @@
+.#{$prefix}{
+  &-card{
+    &-root{
+      @apply
+        tw-w-full
+        tw-shadow-none;
+    }
+
+    &-content{
+      @apply
+        tw-w-full
+        tw-flex
+        tw-flex-col
+        tw-place-items-center
+        tw-gap-4;
+    }
+
+    &-title{
+      @include title('2xl','black','teal-900','center','uppercase');
+    }
+
+    &-subtitle{
+      @include title('xl','bold','teal-500','center','uppercase');
+    }
+  }
+}

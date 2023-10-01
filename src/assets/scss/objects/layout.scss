@@ -1,0 +1,28 @@
+.#{$prefix}{
+  &-layout{
+    &_auth{
+      @apply
+        tw-bg-gray-100
+        tw-w-screen
+        tw-h-screen
+        tw-grid
+        tw-overflow-auto
+        tw-place-items-center
+        tw-grid-cols-1
+        md:tw-grid-cols-[repeat(2,minmax(40%,1fr))]
+        tw-grid-rows-1;
+    }
+  }
+
+  &-img{
+    &_auth{
+      @apply
+        tw-w-full
+        tw-h-full
+        tw-col-start-1
+        tw-col-span-1
+        tw-row-start-1
+        tw-row-span-1
+    }
+  }
+}
